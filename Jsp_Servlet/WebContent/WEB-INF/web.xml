@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+    http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Jsp_Servlet</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+ 
+<servlet>
+<servlet-name>Myservlet</servlet-name>
+<servlet-class>com.servlet.Myservlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>Myservlet</servlet-name>
+<url-pattern>/Welcome.do</url-pattern>
+</servlet-mapping>
+
+<servlet>  
+    <description></description>  
+    <display-name>ProfileServlet</display-name>  
+    <servlet-name>ProfileServlet</servlet-name>  
+    <servlet-class>com.servlet.ProfileServlet</servlet-class>  
+  </servlet>  
+  <servlet-mapping>  
+    <servlet-name>ProfileServlet</servlet-name>  
+    <url-pattern>/ProfileServlet</url-pattern>  
+  </servlet-mapping>  
+  <servlet>  
+    <description></description>  
+    <display-name>LogoutServlet</display-name>  
+    <servlet-name>LogoutServlet</servlet-name>  
+    <servlet-class>com.servlet.LogoutServlet</servlet-class>  
+  </servlet>  
+  <servlet-mapping>  
+    <servlet-name>LogoutServlet</servlet-name>  
+    <url-pattern>/logoutAction.action</url-pattern>  
+  </servlet-mapping>  
+<session-config>
+    <session-timeout>1</session-timeout>
+  </session-config>
+    
+<error-page>
+    <error-code>401</error-code>
+    <location>/AppExceptionHandler</location>
+</error-page>
+<error-page>
+    <error-code>403</error-code>
+    <location>/AppExceptionHandler</location>
+</error-page>
+
+<error-page>
+    <error-code>404</error-code>
+    <location>/AppExceptionHandler</location>
+</error-page>
+<error-page>
+  <exception-type>javax.servlet.ServletException</exception-type>
+  <location>/AppExceptionHandler</location>
+  </error-page>
+  
+<error-page>
+    <error-code>500</error-code>
+    <location>/AppExceptionHandler</location>
+</error-page>
+<error-page>
+    <error-code>503</error-code>
+    <location>/AppExceptionHandler</location>
+</error-page>
+
+</web-app>
+ 

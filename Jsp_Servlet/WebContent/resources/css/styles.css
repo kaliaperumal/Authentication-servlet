@@ -1,0 +1,171 @@
+body {
+    background: none repeat scroll 0 0 #eaeaea;
+    color: #999;
+    font: 400 16px/1.5em sans-serif;
+    margin: 19px;
+}
+* {
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+
+#login-form input[type="text"] {
+    border-radius: 3px 3px 0 0;
+}
+#login-form input[type="text"], #login-form input[type="password"] {
+    border: 1px solid #dcdcdc;
+    padding: 12px 10px;
+    width: 100%;
+}
+#login-form input {
+    font-size: 14px;
+}
+input {
+    font-family: inherit;
+    margin: 0;
+}
+
+#login-form fieldset::before {
+    background-color: #fff;
+    content: "";
+    height: 8px;
+    left: 50%;
+    margin: -4px 0 0 -4px;
+    position: absolute;
+    top: 0;
+    transform: rotate(45deg);
+    width: 8px;
+}
+
+.container {
+    left: 85%;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#login-form {
+    width: 300px;
+}
+
+#login-form h3 {
+    background-color: #282830;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+h3 {
+    margin: 0;
+}
+
+#login-form input[type="submit"] {
+    background: none repeat scroll 0 0 #1dabb8;
+    border-radius: 3px;
+    color: #fff;
+    float: right;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 12px 20px;
+}
+
+#login-form fieldset {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 0 0 5px 5px;
+    padding: 20px;
+    position: relative;
+}
+fieldset {
+    border: medium none;
+    margin: 0;
+}
+
+#header {
+	background: none repeat scroll 0 0 #1dabb8;
+}
+
+
+
+
+.product-headers {
+	margin: 0 0 1.5em;
+}
+
+.product-headers h1 {
+	font-size: 25px;
+	margin: 0 !important;
+}
+
+.product-headers h2 {
+	font-size: 16px;
+	margin: .4em 0 0;
+}
+.product-info {
+	margin: 0 385px 0 0;
+	padding-left: 257px;
+}
+
+.product-info h3 {
+	font-size: 1.23em;
+	font-weight: normal;
+}
+
+.product-info a:visited {
+	color: #61c;
+}
+
+.product-info .g-button:visited {
+	color: #666;
+}
+
+
+.redtext {
+	color: peru;
+}
+
+
+
+
+
+.signout {
+	-moz-box-shadow: inset 0px 1px 0px 0px #fed897;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #fed897;
+	box-shadow: inset 0px 1px 0px 0px #fed897;
+	background-color: #f6b33d;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #eda933;
+	display: inline-block;
+	color: #ffffff;
+	font-family: arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 1px 11px;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px #cd8a15;
+}
+
+.signout:hover {
+	background-color: #d29105;
+}
+
+.signout:active {
+	position: relative;
+	top: 1px;
+}
+
+
+.auto-style2{
+     position:fixed;
+     left:90%;
+}
+
